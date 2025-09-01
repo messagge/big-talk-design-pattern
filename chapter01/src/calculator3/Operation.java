@@ -20,6 +20,8 @@ public class Operation {
             case "pow":
                 result= Math.pow(numberA,numberB);
                 break;
+            default:
+                throw new RuntimeException("不支持的运算");
         }
         return result;
     }
