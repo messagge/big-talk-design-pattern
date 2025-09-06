@@ -10,7 +10,7 @@ public abstract class CashSuper implements ISale {
     }
 
     public double acceptCash(double price, int num) {
-        double result = 0d;
+        double result = price;
         if (this.component != null) {
             // 若装饰对象不为空，则调用装饰对象的acceptCash方法
             result = this.component.acceptCash(price, num);
